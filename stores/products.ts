@@ -10,14 +10,13 @@ export const useProductsStore = defineStore({
       products: [],
     };
   },
-  
+
   actions: {
     setUserDetails(value: {}) {},
     async fetchProducts(userType: string) {
       const productsResponse = await useNuxtApp().$axios.get(`/products`);
       this.fetchProducts = productsResponse.data;
       console.log(productsResponse, "userDetailsResponse");
-      
     },
     setAuthenticationState(value: boolean) {
       this.isAuthenticated = value;
