@@ -3,7 +3,9 @@
     <h1 class="text-3xl font-bold mb-6 text-center">Our Products</h1>
 
     <!-- Search Input -->
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4">
+    <div
+      class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-4"
+    >
       <input
         v-model="searchQuery"
         type="search"
@@ -55,9 +57,7 @@
     </div>
 
     <!-- ❕ No Results -->
-    <div v-else class="text-center text-gray-400 mt-10">
-      No products found.
-    </div>
+    <div v-else class="text-center text-gray-400 mt-10">No products found.</div>
   </div>
 </template>
 
@@ -70,7 +70,7 @@ const {
   data: products,
   error: productsError,
   pending: productsPending,
-} = await useFetch(`${config.public.apiUrl}/products`, {
+} = useFetch(`${config.public.apiUrl}/products`, {
   default: () => [],
 });
 
