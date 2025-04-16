@@ -5,7 +5,7 @@
     >
       <!-- Left Content -->
       <div class="text-white flex flex-col gap-4">
-        <h1 class="text-[32px] md:text-[60px] font-bold">
+        <h1 class="text-[32px] md:text-[56px] font-bold">
           My E-commerce Store
         </h1>
         <h2 class="text-xl md:text-2xl">Welcome to Our E-commerce Store</h2>
@@ -17,19 +17,19 @@
       <div class="flex mt-6 md:mt-0 flex-col md:flex-row gap-4">
         <NuxtLink
           to="/products"
-          class="bg-white text-black text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
+          class="bg-white text-black whitespace-nowrap text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
         >
           See Our Products
         </NuxtLink>
         <NuxtLink
           to="/login"
-          class="bg-white text-black text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
+          class="bg-white text-black whitespace-nowrap text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
         >
           Login
         </NuxtLink>
         <NuxtLink
           to="/signup"
-          class="bg-white text-black text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
+          class="bg-white text-black whitespace-nowrap text-lg px-6 py-3 rounded-md font-semibold animate-pulse transition hover:bg-gray-300"
         >
           Become a Customer
         </NuxtLink>
